@@ -147,7 +147,7 @@ def main():
     time.sleep(0.05)
     voters[0].vote(BB_HOST, BB_PORT, ca_path, ce.public_key, ce.cert, sa.ca_cert, 2)
     voters[1].vote(BB_HOST, BB_PORT, ca_path, ce.public_key, ce.cert, sa.ca_cert, 3)
-    print("  Re-voting di 2 studenti (sostituzione): conta solo la scheda con T massimo")
+    print("  Re-voting di 2 studenti (sostituzione): conta solo la scheda con T massimo") #Si capisce perchè secondo e terzo hanno un voto in più (voters[0] aveva votato il primo)
 
     #  BATTERIA DI ATTACCHI 
     banner("TEST DI SICUREZZA - batteria di attacchi (threat model WP1)")
